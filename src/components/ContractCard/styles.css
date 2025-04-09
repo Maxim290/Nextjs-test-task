@@ -1,0 +1,137 @@
+.contract {
+    color: #000000;
+    position: absolute;
+    width: 213px;
+    left: 0;
+    top: 0;
+    padding: 11px 20px 12px 49px;
+    font-weight: 900;
+    font-size: 20px;
+    background: #f0f1f4;
+    z-index: 1;
+    border-bottom-right-radius: 30px;
+}
+
+.contract::after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: -33px;
+    width: 40px;
+    height: 80px;
+    background: transparent;
+    border-top-left-radius: 37px;
+    z-index: -1;
+}
+
+.contract::before {
+    content: "";
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 80px;
+    z-index: -1;
+    box-shadow: 10px 0px 0px 10px transparent;
+}
+
+@media screen and (max-width: 640px) {
+    .contract {
+        width: 130px;
+        font-size: 14px;
+    }
+}
+
+.contract-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    width: 1667px;
+    border-radius: 30px;
+}
+
+.contract-card {
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.contract-slider::-webkit-scrollbar {
+    display: none;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container-slider {
+    width: 1440px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1800px) {
+    .contract-slider {
+        width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contract-slider {
+        width: 1320px;
+        gap: 19px;
+    }
+
+    .contract {
+        width: 150px;
+        left: 0;
+        top: 0;
+        padding: 8px 15px 12px 37px;
+        font-weight: 900;
+        font-size: 14px;
+    }
+
+    .container-slider {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contract-slider {
+        width: 825px;
+        gap: 14px;
+        margin-top: 80px;
+    }
+    .container-slider {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .contract-slider {
+        width: 700px;
+    }
+
+    .container-slider {
+        width: 400px;
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contract-slider {
+        width: 400px;
+    }
+
+    .container-slider {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container-slider {
+        margin-top: 80px;
+    }
+}

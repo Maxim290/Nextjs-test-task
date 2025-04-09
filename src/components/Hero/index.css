@@ -1,0 +1,128 @@
+.cutCorner {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    width: 567.5px;
+    background: rgba(108, 108, 108, 0.06);
+    backdrop-filter: blur(20px);
+    padding: 35px 27.5px 34px 28px;
+    overflow: hidden;
+    border: none;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, calc(100% - 120px) 100%, 0 100%);
+    border-radius: 27px;
+}
+
+.cutCornerTwo {
+    position: absolute;
+    top: 121px;
+    right: 57px;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    width: 496.5px;
+    background: rgba(108, 108, 108, 0.06);
+    backdrop-filter: blur(20px);
+    padding: 33px 33px 45px 62px;
+    overflow: hidden;
+    border: none;
+    clip-path: polygon(75px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 55%);
+    border-radius: 27px;
+    border-top-left-radius: 27px;
+}
+
+@media screen and (max-width: 1600px) {
+    .cutCorner {
+        top: 33.54px;
+        left: 33.37px;
+        font-size: 30px;
+        width: 472.92px;
+        padding: 25.72px 57.29px 45.42px 31.63px;
+    }
+
+    .cutCornerTwo {
+        top: 120px;
+        right: 47.5px;
+        font-size: 30px;
+        width: 413.75px;
+        padding: 20px 37.54px 44.83px 73.21px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .cutCorner {
+        top: 33.54px;
+        left: 33.37px;
+        font-size: 30px;
+        width: 472.92px;
+        padding: 25.72px 57.29px 45.42px 31.63px;
+    }
+
+    .cutCornerTwo {
+        top: 120px;
+        right: 47.5px;
+        font-size: 30px;
+        width: 413.75px;
+        padding: 20px 37.54px 44.83px 73.21px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cutCorner {
+        top: 27px;
+        left: 24px;
+        font-size: 20px;
+        width: 299px;
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 40%,
+            calc(100% - 50px) 100%,
+            0 100%
+        );
+        padding: 12px 23px 15px 20px;
+    }
+
+    .cutCornerTwo {
+        top: 110px;
+        right: 24px;
+        font-size: 20px;
+        width: 289px;
+        padding: 18px 46px 37px 42px;
+        clip-path: polygon(35px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 55%);
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .cutCorner {
+        position: static;
+        margin: 36px 38px 0 38px;
+        top: 0;
+        height: 107px;
+        left: 24px;
+        font-size: 20px;
+        width: 299px;
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 40%,
+            calc(100% - 50px) 100%,
+            0 100%
+        );
+        background: #546b868a;
+        padding: 12px 23px 15px 20px;
+    }
+
+    .cutCornerTwo {
+        position: relative;
+        top: 13px;
+        margin: 0 38px;
+        font-size: 20px;
+        width: 289px;
+        background: #546b868a;
+        padding: 18px 46px 37px 42px;
+        clip-path: polygon(35px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 55%);
+    }
+}
